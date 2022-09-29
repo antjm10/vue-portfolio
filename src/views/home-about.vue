@@ -91,6 +91,7 @@ p {
   font-size: 20px;
   margin-bottom: 100px;
   margin-top: 15vh;
+  line-height: 1.6;
 
   animation-duration: 2s;
   animation-name: slideimg;

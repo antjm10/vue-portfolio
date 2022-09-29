@@ -25,17 +25,16 @@
   margin-top: 15vh;
   margin-bottom: 15vh;
 
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: slidein;
 }
 
 .project {
-  text-align: center;
-  margin-left: 15vw;
+  margin-left: 20vw;
   max-width: 65%;
 
 
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-name: slidp;
 }
 
@@ -43,7 +42,7 @@
 
 @keyframes slidp {
   from {
-    margin-left: 100%;
+    margin-left: 300%;
     width: 300%;
   }
 
@@ -55,7 +54,7 @@
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
+    margin-left: 300%;
     width: 300%;
   }
 
@@ -64,6 +63,8 @@
     width: 100%;
   }
 }
+
+
 
 /* general */
 
@@ -83,21 +84,25 @@
 
 .description {
   margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 1rem;
+  line-height: 1.6;
 
 }
 
 h1 {
-  text-align: center;
   margin-top: 15vh;
+  margin-left: 23vw;
 
-  animation-duration: 1s;
-  animation-name: slidein;
+  animation-duration: 2s;
+  animation-name: slidep;
 }
 
 .name_project {
 padding: 15px;
+  text-align: center;
 max-width: 500px;
-  margin-left: 23px;
   background-color: darkslateblue;
 color: lightskyblue;
 

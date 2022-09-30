@@ -1,3 +1,4 @@
+<!--Page Home-->
 
 <template>
   <div id="home">
@@ -6,7 +7,8 @@
       <br>
       I'am <span class="home_title-color">Anthony</span>
       <br>
-      Apprentice developer</strong></h1>
+      Apprentice developer</strong>
+    </h1>
     <img :src="require('../assets/thumbnail_IMG_2746 (1).jpg')" alt="My photo"/>
     <p>{{ about }}</p>
   </div>
@@ -16,7 +18,7 @@
 export default {
   data () {
     return {
-      about: 'Hey! How are you doing? As presented above, my name is Anthony and I\'m an apprentice computer scientist in application development. Methodical, analytical and a team player, I like the idea that everyone has a role to play to achieve a common goal. Faced with the challenges that I may encounter in my career, both personal and professional, I rely on my perseverance to propose viable solutions. '
+      about: 'Hey! How are you doing? As presented above, my name is Anthony and I\'m an apprentice IT developer. Methodical, analytical and a team player, I like the idea that everyone has a role to play to achieve a common goal. Faced with the challenges that I may encounter in my career, both personal and professional, I rely on my perseverance to propose viable solutions. '
     }
   }
 }
@@ -34,9 +36,18 @@ img {
 
   animation-duration: 2s;
   animation-name: slideimg;
-
-
 }
+
+/*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
+@media screen and (max-device-width: 800px)
+{
+  img {
+    width: 200px;
+    margin-top: 5vh;
+    margin-right: 10vw;
+  }
+}
+
 h1 {
   margin-top: 15vh;
   font-size: 40px;
@@ -62,6 +73,14 @@ p {
   animation-name: slideimg;
 }
 
+/*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
+@media screen and (max-device-width: 800px)
+{
+p {
+  max-width: 80%;
+}
+}
+
 #home {
   max-width: 85%;
   display: grid;
@@ -81,7 +100,16 @@ p {
   }
 
 }
+/*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
+@media screen and (max-device-width: 800px)
+{
+  #home
+  {
+    margin-left: 15vw;
 
+  }
+
+}
 
 /* animation */
 

@@ -1,7 +1,4 @@
-
-
-
-
+<!--Page Header-->
 
 <template>
 <div>
@@ -34,6 +31,16 @@
   width: 100%;
   top: 0;
   left: 0;
+
+}
+
+@media screen and (max-device-width: 800px)
+{
+  .navbar
+  {
+    padding-left: 5vw;
+
+  }
 
 }
 

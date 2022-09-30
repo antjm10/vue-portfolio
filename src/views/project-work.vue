@@ -1,12 +1,14 @@
+<!--Page Project-->
+
 <template>
   <div class="project">
     <h1 class="title-project"><strong>{{title}}</strong></h1>
     <p class="description">{{messageProject}}</p>
     <div class="wrapper">
-      <div class="end"><a href="https://github.com/antjm10/web-site" target="_blank"><img :src="require('../assets/make-a-website.jpg')" alt="My photo" height="350" width="500"/></a><p class="name_project">Web site</p></div>
-      <div class="start"><a href="https://github.com/antjm10/JavaScript-games" target="_blank"><img :src="require('../assets/1_spTwLANfg8qPWZ0-5bt1pQ.png')" alt="My photo" height="350" width="500"/></a><p class="name_project">Snake game</p></div>
-      <div class="end"><a href="https://github.com/antjm10/my-first-blog" target="_blank"><img :src="require('../assets/Web-Content-Blog.jpg')" alt="My photo" height="350" width="500"/></a><p class="name_project">Blog</p></div>
-      <div class="start"><a href="https://github.com/antjm10/SQL_PHP" target="_blank"><img :src="require('../assets/awesome-html-login-form-layout.webp')" alt="My photo" height="350" width="500"/></a><p class="name_project">Login system</p></div>
+      <div class="end"><a href="https://github.com/antjm10/web-site" target="_blank"><img :src="require('../assets/image-website.jpg')" alt="My photo" height="350" width="500"/></a><p class="name_project">Web site</p></div>
+      <div class="start"><a href="https://github.com/antjm10/JavaScript-games" target="_blank"><img :src="require('../assets/image-snake_game.png')" alt="My photo" height="350" width="500"/></a><p class="name_project">Snake game</p></div>
+      <div class="end"><a href="https://github.com/antjm10/my-first-blog" target="_blank"><img :src="require('../assets/image-Blog.jpg')" alt="My photo" height="350" width="500"/></a><p class="name_project">Blog</p></div>
+      <div class="start"><a href="https://github.com/antjm10/SQL_PHP" target="_blank"><img :src="require('../assets/image-login_php.webp')" alt="My photo" height="350" width="500"/></a><p class="name_project">Login system</p></div>
     </div>
   </div>
 </template>
@@ -28,6 +30,8 @@ export default {
 
 <style scoped>
 
+/* general */
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,6 +44,16 @@ export default {
   animation-name: slidein;
 }
 
+/*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
+@media screen and (max-device-width: 800px)
+{
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+}
+
 .project {
   margin-left: 20vw;
   max-width: 65%;
@@ -49,19 +63,43 @@ export default {
   animation-name: slidp;
 }
 
+/*apply the following style if the display resolution reaches 2000px : move the navigation*/
+@media screen and (min-device-width: 2000px) {
+  .project {
+    margin-left: 23vw;
+
+  }
+
+}
+
+/*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
+@media screen and (max-device-width: 800px)
+{
+  .project
+  {
+    margin-left: 17vw;
+
+  }
+}
+
 .project h1 {
   margin-left: 25vw;
 }
 
+/*apply the following style if the display resolution reaches 2000px : move the navigation*/
 @media screen and (min-device-width: 2000px)
 {
-  .project
-  {
-    margin-left: 23vw;
-
-  }
   .project h1 {
     margin-left: 22vw;
+  }
+
+}
+
+/*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
+@media screen and (max-device-width: 800px)
+{
+  .project h1 {
+    margin-right: 20vw;
   }
 
 }
@@ -92,6 +130,7 @@ export default {
 
 }
 
+/*apply the following style if the display resolution reaches 2000px : move the navigation*/
 @media screen and (min-device-width: 2000px)
 {
   .description

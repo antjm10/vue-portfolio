@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-    <h1><strong>{{title}}</strong></h1>
+    <h1 class="title-project"><strong>{{title}}</strong></h1>
     <p class="description">{{messageProject}}</p>
     <div class="wrapper">
       <div class="end"><a href="https://github.com/antjm10/web-site" target="_blank"><img :src="require('../assets/make-a-website.jpg')" alt="My photo" height="350" width="500"/></a><p class="name_project">Web site</p></div>
@@ -49,6 +49,19 @@ export default {
   animation-name: slidp;
 }
 
+@media screen and (min-device-width: 2000px)
+{
+  .project
+  {
+    margin-left: 23vw;
+
+  }
+  .project h1 {
+    margin-left: 22vw;
+  }
+
+}
+
 
 /* general */
 
@@ -69,9 +82,19 @@ export default {
 .description {
   margin-top: 5vh;
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 95%;
   grid-column-gap: 1rem;
   line-height: 1.6;
+
+}
+
+@media screen and (min-device-width: 2000px)
+{
+  .description
+  {
+    grid-template-columns: 84%;
+
+  }
 
 }
 

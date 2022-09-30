@@ -71,6 +71,16 @@ p {
   margin-left: 444px;
 }
 
+@media screen and (min-device-width: 2000px)
+{
+  #home
+  {
+    margin-left: 23vw;
+
+  }
+
+}
+
 /* animation */
 
 @keyframes slideimg {

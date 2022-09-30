@@ -37,6 +37,16 @@ export default {
 
 }
 
+@media screen and (min-device-width: 2000px)
+{
+  .logo
+  {
+    margin-bottom: 23vw;
+
+  }
+
+}
+
 .contact {
   margin-top: 15vh;
 
@@ -74,6 +84,14 @@ p {
   line-height: 1.6;
 }
 
+@media screen and (min-device-width: 2000px)
+{
+  p
+  {
+text-align: center;
+  }
+
+}
 
 
 

@@ -49,6 +49,10 @@ export default {
   animation-name: slidp;
 }
 
+.project h1 {
+  margin-left: 25vw;
+}
+
 @media screen and (min-device-width: 2000px)
 {
   .project

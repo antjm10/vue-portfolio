@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nisl porttitor, mattis nunc sit amet, iaculis massa. Phasellus fringilla luctus lectus. Curabitur eu nisl a urna laoreet lacinia. Fusce id fringilla nulla. Aenean lobortis, arcu non egestas porta, ligula nunc ornare justo, eu sollicitudin odio odio tempor neque. Pellentesque libero libero, hendrerit quis sem id, aliquam consectetur neque. Vestibulum eleifend purus ex, in facilisis eros faucibus quis. Nam efficitur a elit nec accumsan. Phasellus tincidunt sed nisl et tincidunt. Nunc vitae magna quis mauris maximus malesuada. Morbi varius sodales accumsan. Praesent ultrices sagittis maximus.'
+      about: 'Hey! How are you doing? As presented above, my name is Anthony and I\'m an apprentice computer scientist in application development. Methodical, analytical and a team player, I like the idea that everyone has a role to play to achieve a common goal. Faced with the challenges that I may encounter in my career, both personal and professional, I rely on my perseverance to propose viable solutions. '
     }
   }
 }
@@ -71,6 +71,7 @@ p {
   margin-left: 444px;
 }
 
+/*apply the following style if the display resolution reaches 2000px : move the navigation*/
 @media screen and (min-device-width: 2000px)
 {
   #home
@@ -80,6 +81,7 @@ p {
   }
 
 }
+
 
 /* animation */
 

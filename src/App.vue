@@ -22,33 +22,13 @@ export default {
   components: {
     FooterPage,
     HeaderNav
-
-
-  },
+  }
 
 }
-
-
 
 </script>
 
 <style>
-
-#nav {
-  padding: 30px;
-  text-align: center;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: whitesmoke;
-  background: crimson;
-  border-radius: .5rem;
-}
 
 
 body{
@@ -57,22 +37,12 @@ body{
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(39,35,112,1) 100%, rgba(23,23,23,1) 100%);
 }
 
-.bar {
-}
-
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: lightblue;
   max-height: 100%;
-}
-
-.nav {
-  color: #42b983;
-  text-decoration: none;
-  text-align: center;
 }
 
 </style>

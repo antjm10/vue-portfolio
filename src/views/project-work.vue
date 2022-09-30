@@ -1,7 +1,7 @@
 <template>
   <div class="project">
-    <h1><strong>Project Github</strong></h1>
-    <p class="description">Sed ac tellus mauris. Pellentesque non pharetra felis, non feugiat ipsum. Sed interdum et tellus in mollis. Duis egestas accumsan sem, varius ornare magna fermentum a. Maecenas aliquam sollicitudin quam eget aliquam. Suspendisse accumsan elit tristique tellus molestie sollicitudin. Mauris nec mattis dui, vitae semper turpis.</p>
+    <h1><strong>{{title}}</strong></h1>
+    <p class="description">{{messageProject}}</p>
     <div class="wrapper">
       <div class="end"><a href="https://github.com/antjm10/web-site" target="_blank"><img :src="require('../assets/make-a-website.jpg')" alt="My photo" height="350" width="500"/></a><p class="name_project">Web site</p></div>
       <div class="start"><a href="https://github.com/antjm10/JavaScript-games" target="_blank"><img :src="require('../assets/1_spTwLANfg8qPWZ0-5bt1pQ.png')" alt="My photo" height="350" width="500"/></a><p class="name_project">Snake game</p></div>
@@ -12,7 +12,18 @@
 </template>
 
 
+<script>
 
+export default {
+  data () {
+    return {
+      title: 'Project Github',
+      messageProject: 'Here are different projects that I realized during my year of apprenticeship or before that in an online formation to learn programming. Just click on the image and you will access the source code of the project on Github.'
+    }
+  }
+}
+
+</script>
 
 
 <style scoped>
@@ -37,33 +48,6 @@
   animation-duration: 2s;
   animation-name: slidp;
 }
-
-/* animation */
-
-@keyframes slidp {
-  from {
-    margin-left: 300%;
-    width: 300%;
-  }
-
-  to {
-    margin-right: 0;
-    width: 100%;
-  }
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 300%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
 
 
 /* general */
@@ -100,13 +84,44 @@ h1 {
 }
 
 .name_project {
-padding: 15px;
+  margin-top: -4px;
+  padding: 15px;
   text-align: center;
-max-width: 500px;
+  max-width: 470px;
   background-color: darkslateblue;
-color: lightskyblue;
+  color: lightskyblue;
 
 
+}
+
+
+
+
+
+/* animation */
+
+@keyframes slidp {
+  from {
+    margin-left: 300%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 300%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 

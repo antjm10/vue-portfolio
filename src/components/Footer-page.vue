@@ -11,16 +11,16 @@
 
 
 
-<style>
-.footer  {
+<style scoped>
+.footer {
   text-align: center;
   align-items: center;
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
   margin-top: 10vh;
-  background-color: #2c3e50;
+  background-color: #1c1721;
   display: grid;
-  grid-template-rows: 500%;
-
+  grid-template-rows: 475%;
+  color: lightblue;
 }
 
 

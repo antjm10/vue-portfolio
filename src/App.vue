@@ -1,11 +1,8 @@
 
 <template>
-  <div id="nav">
-
-          <router-link to="/" class="nav-item nav-link">Home</router-link>
-          <router-link to="/project" class="nav-item nav-link">Project</router-link>
-          <router-link to="/contact" class="nav-link">Careers</router-link>
-
+  <HeaderNav />
+  <div>
+    {{about}}
   </div>
   <router-view/>
 
@@ -18,13 +15,20 @@
 
 <script>
 import FooterPage from './components/Footer-page.vue';
+import HeaderNav from './components/Header-nav.vue';
+
 
 export default {
   components: {
-    FooterPage
+    FooterPage,
+    HeaderNav
 
-  }
+
+  },
+
 }
+
+
 
 </script>
 
@@ -62,7 +66,6 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: lightblue;
-  margin-top: 60px;
   max-height: 100%;
 }
 

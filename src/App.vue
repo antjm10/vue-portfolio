@@ -2,7 +2,6 @@
 <template>
   <HeaderNav />
   <div>
-    {{about}}
   </div>
   <router-view/>
 

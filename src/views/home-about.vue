@@ -18,7 +18,7 @@
 export default {
   data () {
     return {
-      about: 'Hey! How are you doing? As presented above, my name is Anthony and I\'m an apprentice IT developer. Methodical, analytical and a team player, I like the idea that everyone has a role to play to achieve a common goal. Faced with the challenges that I may encounter in my career, both personal and professional, I rely on my perseverance to propose viable solutions. '
+      about: 'Hey! How are you doing? As presented above, my name is Anthony and I\'m an apprentice IT developer. Methodical, analytical and having a team spirit, I like the idea that everyone has a role to play to achieve a common goal. Faced with the challenges that I may encounter in my career, both personal and professional, I rely on my perseverance to propose viable solutions. '
     }
   }
 }

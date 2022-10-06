@@ -33,6 +33,7 @@ export default {
 .logo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70%;
   grid-auto-rows: minmax(100px, auto);
   margin-top: 15vh;
   margin-bottom: 35vh;

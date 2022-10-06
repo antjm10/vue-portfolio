@@ -48,6 +48,16 @@ img {
   }
 }
 
+/*apply the following style if the display resolution reaches maximum 500px : move the navigation*/
+@media screen and (max-device-width: 500px)
+{
+  img {
+    width: 175px;
+    margin-top: 5vh;
+    margin-left: 1vw;
+  }
+}
+
 h1 {
   margin-top: 15vh;
   font-size: 40px;
@@ -101,15 +111,17 @@ p {
 
 }
 /*apply the following style if the display resolution reaches maximum 800px : move the navigation*/
-@media screen and (max-device-width: 800px)
+@media screen and (min-device-width: 1020px)
 {
   #home
   {
-    margin-left: 15vw;
+    margin-left: 25vw;
 
   }
 
 }
+
+
 
 /* animation */
 

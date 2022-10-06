@@ -40,6 +40,7 @@ export default {
   margin-top: 15vh;
   margin-bottom: 15vh;
 
+
   animation-duration: 2s;
   animation-name: slidein;
 }
@@ -66,7 +67,7 @@ export default {
 /*apply the following style if the display resolution reaches 2000px : move the navigation*/
 @media screen and (min-device-width: 2000px) {
   .project {
-    margin-left: 23vw;
+    margin-right: 23vw;
 
   }
 
@@ -77,10 +78,11 @@ export default {
 {
   .project
   {
-    margin-left: 17vw;
+    margin-left: 18vw;
 
   }
 }
+
 
 .project h1 {
   margin-left: 25vw;
